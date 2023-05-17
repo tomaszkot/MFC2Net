@@ -24,7 +24,7 @@ Dialog1::~Dialog1()
 void Dialog1::DoDataExchange(CDataExchange* pDX)
 {
 	CDialog::DoDataExchange(pDX);
-	//DDX_ManagedControl(pDX, IDC_STATIC_PH_FORMS, m_ctrl1);
+	DDX_ManagedControl(pDX, IDC_STATIC_PH_FORMS, m_ctrl1);
 }
 
 

@@ -3,11 +3,13 @@
 #include "Dialog1_API.h"
 // Dialog1 dialog
 //#include "..\CppCliInterop\CppCliInterop.h";
+
+
 class  Dialog1 : public CDialog
 {
 	DECLARE_DYNAMIC(Dialog1)
 		//CppCliInterop* cppCli = nullptr;
-		//CWinFormsControl<ManagedLibrary::UserControl1> m_ctrl1;
+		CWinFormsControl<ManagedLibrary::UserControl1> m_ctrl1;
 public:
 	OVPXMFCUICONTROLS_API Dialog1(CWnd* pParent = nullptr);   // standard constructor
 	virtual ~Dialog1();
