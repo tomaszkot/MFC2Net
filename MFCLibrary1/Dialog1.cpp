@@ -53,9 +53,5 @@ BOOL Dialog1::OnInitDialog()
 
 void Dialog1::OnBnClickedButtonShowForm()
 {
-	// TODO:  Add extra initialization here
-	//cppCli = new CppCliInterop();
-	//cppCli->SetMessage((wchar_t*)L"Hello, from C++ dll\0");
-	//cppCli->ShowForm();
-	// TODO: Add your control notification handler code here
+
 }
