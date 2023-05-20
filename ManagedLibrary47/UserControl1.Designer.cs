@@ -1,4 +1,4 @@
-﻿namespace ManagedLibraryCore
+﻿namespace ManagedLibrary47
 {
     partial class UserControl1
     {
@@ -39,7 +39,7 @@
             this.btnShowWinForms.Name = "btnShowWinForms";
             this.btnShowWinForms.Size = new System.Drawing.Size(285, 23);
             this.btnShowWinForms.TabIndex = 0;
-            this.btnShowWinForms.Text = "btn on User Control - clikc me to see WinUI";
+            this.btnShowWinForms.Text = "btn on User Control";
             this.btnShowWinForms.UseVisualStyleBackColor = true;
             this.btnShowWinForms.Click += new System.EventHandler(this.btnShowWinForms_Click);
             // 

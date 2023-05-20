@@ -1,7 +1,7 @@
 ﻿using System.Windows.Forms;
 
 
-namespace ManagedLibraryCore
+namespace ManagedLibrary47
 {
     public partial class Form1 : Form
     {
@@ -17,7 +17,7 @@ namespace ManagedLibraryCore
 
         }
 
-       
+
 
         private void Form1_Load(object sender, System.EventArgs e)
         {

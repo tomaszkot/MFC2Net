@@ -1,4 +1,4 @@
-using ManagedLibrary;
+using ManagedLibraryCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;

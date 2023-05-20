@@ -120,12 +120,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>OVPXMFCUICONTROLS_EXPORTS;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalUsingDirectories>C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\6.0.16\ref\net6.0\System.Windows.Forms.dll</AdditionalUsingDirectories>
+      <AdditionalUsingDirectories>C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\6.0.16\ref\net6.0\</AdditionalUsingDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <ModuleDefinitionFile>.\MFCLibrary1.def</ModuleDefinitionFile>
-      <AdditionalDependencies>CppCliInterop.lib</AdditionalDependencies>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
     </Link>
     <Midl>
@@ -217,7 +218,7 @@
     <ResourceCompile Include="MFCLibrary1.rc" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ManagedLibrary\ManagedLibrary.csproj">
+    <ProjectReference Include="..\ManagedLibrary\ManagedLibraryCore.csproj">
       <Project>{14da10c8-ac12-4456-aa41-740a5699ed97}</Project>
     </ProjectReference>
   </ItemGroup>

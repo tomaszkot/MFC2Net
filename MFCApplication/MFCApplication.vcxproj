@@ -98,7 +98,7 @@
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <AdditionalDependencies>CppCliInterop.lib;MFCLibrary1.lib</AdditionalDependencies>
+      <AdditionalDependencies>MFCLibrary1.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
     </Link>
     <Midl>
@@ -216,21 +216,18 @@
     <ResourceCompile Include="MFCApplication.rc" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="CppCliInterop.deps.json">
-      <DeploymentContent>true</DeploymentContent>
-    </None>
     <None Include="res\MFCApplication.rc2" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="res\MFCApplication.ico" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MFCLibrary1\MFCLibrary1.vcxproj">
-      <Project>{0b40306c-67f8-4f8c-82b9-969ceda6e282}</Project>
-    </ProjectReference>
+    <Manifest Include="app.manifest" />
   </ItemGroup>
   <ItemGroup>
-    <Manifest Include="app.manifest" />
+    <ProjectReference Include="..\ManagedLibrary47\ManagedLibrary47.csproj">
+      <Project>{2e1490f5-4fe3-4483-8ca4-eaafe92b69db}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

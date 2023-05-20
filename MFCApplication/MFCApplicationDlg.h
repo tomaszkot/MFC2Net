@@ -1,14 +1,14 @@
 
 // MFCApplicationDlg.h : header file
 //
-
+#include <memory>
 #pragma once
 
-
+class WinFormsControlHost;
 // CMFCApplicationDlg dialog
 class CMFCApplicationDlg : public CDialogEx
 {
-  
+	std::shared_ptr<WinFormsControlHost> m_winFormsControlHost;
 	//CWinFormsControl<ManagedLibrary::UserControl1> m_ctrl1;
 // Construction
 public:

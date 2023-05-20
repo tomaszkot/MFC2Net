@@ -1,4 +1,4 @@
-﻿namespace ManagedLibraryCore
+﻿namespace ManagedLibrary47
 {
     partial class Form1
     {
@@ -32,7 +32,7 @@
             this.txtMessage = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.userControl11 = new ManagedLibraryCore.UserControl1();
+            this.userControl11 = new ManagedLibrary47.UserControl1();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 

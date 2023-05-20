@@ -9,12 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
-namespace ManagedLibraryCore
+namespace ManagedLibrary47
 {
     public partial class UserControl1 : UserControl
     {
-  
-  
         public UserControl1()
         {
             InitializeComponent();
@@ -24,8 +22,7 @@ namespace ManagedLibraryCore
         {
             
         }
-
-
+               
 
         private void AddUC()
         {

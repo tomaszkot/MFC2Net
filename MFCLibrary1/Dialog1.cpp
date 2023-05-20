@@ -8,6 +8,15 @@
 
 
 // Dialog1 dialog
+#define UseWinFormsControl
+
+class WinFormsControlHost
+{
+public:
+#ifdef UseWinFormsControl
+	CWinFormsControl<ManagedLibraryCore::UserControl1> m_ctrl1;
+#endif
+};
 
 IMPLEMENT_DYNAMIC(Dialog1, CDialog)
 
@@ -24,7 +33,12 @@ Dialog1::~Dialog1()
 void Dialog1::DoDataExchange(CDataExchange* pDX)
 {
 	CDialog::DoDataExchange(pDX);
-	DDX_ManagedControl(pDX, IDC_STATIC_PH_FORMS, m_ctrl1);
+#ifdef UseWinFormsControl
+	if (!m_winFormsControlHost)
+		m_winFormsControlHost = std::make_shared<WinFormsControlHost>();
+
+	DDX_ManagedControl(pDX, IDC_STATIC_PH_FORMS, m_winFormsControlHost->m_ctrl1);
+#endif
 }
 
 

@@ -54,7 +54,6 @@
     <None Include="res\MFCApplication.rc2">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="CppCliInterop.deps.json" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="res\MFCApplication.ico">

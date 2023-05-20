@@ -3,15 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManagedLibrary", "ManagedLibrary\ManagedLibrary.csproj", "{14DA10C8-AC12-4456-AA41-740A5699ED97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManagedLibraryCore", "ManagedLibrary\ManagedLibraryCore.csproj", "{14DA10C8-AC12-4456-AA41-740A5699ED97}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsApp1", "WinFormsApp1\WinFormsApp1.csproj", "{3943F12B-402F-40E6-B8FB-2392D6F76200}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCApplication", "MFCApplication\MFCApplication.vcxproj", "{798F98A0-1FDA-4078-A980-AA950F73E47D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0B40306C-67F8-4F8C-82B9-969CEDA6E282} = {0B40306C-67F8-4F8C-82B9-969CEDA6E282}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCLibrary1", "MFCLibrary1\MFCLibrary1.vcxproj", "{0B40306C-67F8-4F8C-82B9-969CEDA6E282}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "apps", "apps", "{B69EC38D-FE9D-4DC0-B02A-BB9254500F99}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManagedLibrary47", "ManagedLibrary47\ManagedLibrary47.csproj", "{2E1490F5-4FE3-4483-8CA4-EAAFE92B69DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -101,6 +106,26 @@ Global
 		{0B40306C-67F8-4F8C-82B9-969CEDA6E282}.Release|x64.Build.0 = Release|x64
 		{0B40306C-67F8-4F8C-82B9-969CEDA6E282}.Release|x86.ActiveCfg = Release|Win32
 		{0B40306C-67F8-4F8C-82B9-969CEDA6E282}.Release|x86.Build.0 = Release|Win32
+		{2E1490F5-4FE3-4483-8CA4-EAAFE92B69DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E1490F5-4FE3-4483-8CA4-EAAFE92B69DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E1490F5-4FE3-4483-8CA4-EAAFE92B69DB}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{2E1490F5-4FE3-4483-8CA4-EAAFE92B69DB}.Debug|ARM.Build.0 = Debug|Any CPU
+		{2E1490F5-4FE3-4483-8CA4-EAAFE92B69DB}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{2E1490F5-4FE3-4483-8CA4-EAAFE92B69DB}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{2E1490F5-4FE3-4483-8CA4-EAAFE92B69DB}.Debug|x64.ActiveCfg = Debug|x64
+		{2E1490F5-4FE3-4483-8CA4-EAAFE92B69DB}.Debug|x64.Build.0 = Debug|x64
+		{2E1490F5-4FE3-4483-8CA4-EAAFE92B69DB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2E1490F5-4FE3-4483-8CA4-EAAFE92B69DB}.Debug|x86.Build.0 = Debug|Any CPU
+		{2E1490F5-4FE3-4483-8CA4-EAAFE92B69DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E1490F5-4FE3-4483-8CA4-EAAFE92B69DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E1490F5-4FE3-4483-8CA4-EAAFE92B69DB}.Release|ARM.ActiveCfg = Release|Any CPU
+		{2E1490F5-4FE3-4483-8CA4-EAAFE92B69DB}.Release|ARM.Build.0 = Release|Any CPU
+		{2E1490F5-4FE3-4483-8CA4-EAAFE92B69DB}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{2E1490F5-4FE3-4483-8CA4-EAAFE92B69DB}.Release|ARM64.Build.0 = Release|Any CPU
+		{2E1490F5-4FE3-4483-8CA4-EAAFE92B69DB}.Release|x64.ActiveCfg = Release|x64
+		{2E1490F5-4FE3-4483-8CA4-EAAFE92B69DB}.Release|x64.Build.0 = Release|x64
+		{2E1490F5-4FE3-4483-8CA4-EAAFE92B69DB}.Release|x86.ActiveCfg = Release|Any CPU
+		{2E1490F5-4FE3-4483-8CA4-EAAFE92B69DB}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

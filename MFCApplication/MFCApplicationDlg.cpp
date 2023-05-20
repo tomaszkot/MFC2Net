@@ -12,7 +12,15 @@
 #define new DEBUG_NEW
 #endif
 
+#define UseWinFormsControl
 
+class WinFormsControlHost
+{
+public:
+#ifdef UseWinFormsControl
+	CWinFormsControl<ManagedLibrary47::UserControl1> m_ctrl1;
+#endif
+};
 // CAboutDlg dialog used for App About
 
 class CAboutDlg : public CDialogEx
@@ -59,7 +67,12 @@ CMFCApplicationDlg::CMFCApplicationDlg(CWnd* pParent /*=nullptr*/)
 void CMFCApplicationDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
-	//DDX_ManagedControl(pDX, IDC_STATIC_PH, m_ctrl1);
+#ifdef UseWinFormsControl
+	if (!m_winFormsControlHost)
+		m_winFormsControlHost = std::make_shared<WinFormsControlHost>();
+
+	DDX_ManagedControl(pDX, IDC_STATIC_PH, m_winFormsControlHost->m_ctrl1);
+#endif
 }
 
 BEGIN_MESSAGE_MAP(CMFCApplicationDlg, CDialogEx)
@@ -162,15 +175,11 @@ HCURSOR CMFCApplicationDlg::OnQueryDragIcon()
 
 void CMFCApplicationDlg::OnBnClickedButtonShowWinui()
 {
-	
-  //cppCli->SetMessage((wchar_t*)L"Hello, from C++\0");
-  //cppCli->ShowForm();
 }
 
 
 void CMFCApplicationDlg::OnBnClickedButton1()
 {
-	//
 	Dialog1::ShowDoModal();
 	
 }
